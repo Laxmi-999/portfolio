@@ -1,0 +1,32 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 20rem;
+    /* width: cover; */
+    /* display: flex; */
+       position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        
+        
+        
+     
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer-text {
+    margin: 0;
+    align-content: center;
+    padding:2rem;
+    font-size: 4rem;
+}

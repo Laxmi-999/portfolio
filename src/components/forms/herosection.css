@@ -1,0 +1,70 @@
+.hero-section {
+  background-image: url('C:\REACTPROJECT\navapp\src\assets\babe.jpg');
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+  /* background-color: purple; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: enter;
+}
+/* .image{
+height:500px;
+width:500px;
+align-items: center; */
+/* display: flex; */
+
+
+.hero-content {
+  color: #ffffff;
+  height: 1000px;
+  justify-content: center;
+}
+
+.hero-content h1 {
+font-size: 10rem;
+color:black;
+  margin-bottom: 1rem;
+  padding-top: 20rem;
+  padding-left: 3rem;
+}
+
+.hero-content p {
+  font-size:5rem;
+  color: black;
+  margin-bottom: 2rem;
+  padding-left: 20rem;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 1rem 2rem;
+  border: 0cap;
+  font-size: 3rem;
+  margin-left: 45rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #eeeeee;
+}
+.paragraph {
+  position:absolute;
+  font-size: 5rem;
+  color:orange;
+  margin-top: 90rem;
+  margin-left:5%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-right:5%;
+  font-weight: bold;
+  
+  justify-content: center;
+
+}

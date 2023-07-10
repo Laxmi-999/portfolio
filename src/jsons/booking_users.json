@@ -1,0 +1,31 @@
+{
+    "bookingUsers": [
+        {
+            "userId": "sndnsdns",
+            "name": "sndns",
+            "email": "nsdns",
+            "destinationId": "dnsdns",
+            "todo": [
+                "hiking"
+            ]
+        },
+        {
+            "userId": "sndns",
+            "name": "sndns",
+            "email": "nsdns",
+            "destinationId": "dnsdns",
+            "todo": [
+                "hiking"
+            ]
+        },
+        {
+            "userId": "sds",
+            "name": "sndns",
+            "email": "nsdns",
+            "destinationId": "dnsdns",
+            "todo": [
+                "hiking"
+            ]
+        }
+    ]
+}

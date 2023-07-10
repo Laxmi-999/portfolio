@@ -1,0 +1,73 @@
+{
+    "Destination": [
+        {
+            "id": "dnsdns",
+            "name": "Pokhara",
+            "country": "Nepal",
+            "imageUrl": "https/www.cnsndc.com",
+            "cost": "30000",
+            "routes": "ktm-pkr 200km",
+            "places": [
+                {
+                    "name": "Fewa lake",
+                    "address": "Pokhra -",
+                    "imageUrl": "https/www.cnsndc.com",
+                    "todo": [
+                        "boating",
+                        "walking",
+                        "cycling",
+                        "dirt quad biking"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Solukhumbu",
+            "country": "Nepal",
+            "imageUrl": "https/www.cnsndc.com",
+            "cost": "30000",
+            "routes": "khotang-namche",
+            "places": [
+                {
+                    "name": "namche",
+                    "imageUrl": "https/www.cnsndc.com",
+                    "address": "solokubu 5",
+                    "todo": [
+                        "homestay",
+                        "hiking",
+                        "horse riding",
+                        "yak milk drinking"
+                    ]
+                },
+                {
+                    "name": "Everest",
+                    "address": "solokubu 1",
+                    "todo": [
+                        "Treking",
+                        "climbing",
+                        "camping"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lumbini",
+            "imageUrl": "https/www.cnsndc.com",
+            "cost": "30000",
+            "country": "Nepal",
+            "routes": "ktm-lumbini 200",
+            "places": [
+                {
+                    "name": "Mayadevi temple",
+                    "imageUrl": "https/www.cnsndc.com",
+                    "address": "Rupandehi 12",
+                    "todo": [
+                        "visting monuemnets",
+                        "walking",
+                        "cycling"
+                    ]
+                }
+            ]
+        }
+    ]
+}

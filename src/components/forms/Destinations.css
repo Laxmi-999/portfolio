@@ -1,0 +1,65 @@
+.destinations-container {
+    padding: 2rem;
+    background-color: antiquewhite;
+  }
+  
+  .destinations-heading {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns*/
+    grid-template-rows: repeat(2, auto);    /*Two rows */
+    gap: 5rem;
+  }
+  
+  .destination-card {
+    /* background-image: url('C:\REACTPROJECT\navapp\src\components\images\mardi.jpg'); */
+    background-color:lightblue;
+    padding: 1.5rem;
+    /* border-radius: 4px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height:1000px;
+    width:2000px;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 40rem;
+
+  }
+  .destination-card + .destination-card {
+    margin-top: 4rem; /* Vertical space between dives */
+  }
+  
+  .destination-card:nth-child(odd) {
+    margin-right: 4rem; /* Horizontal space between dives */
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .destination-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .destination-name {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    /* text-decoration-color: orange; */
+    color: orange;
+  }
+  
+  .destination-description {
+    font-size: 5rem;
+    text-align: center;
+  }
+  

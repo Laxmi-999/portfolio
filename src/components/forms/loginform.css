@@ -1,0 +1,41 @@
+.body{
+    margin: 0;
+    padding: 0;
+    /* height:100vh; */
+    font-family:montserrat;
+    /* background-color: cornflowerblue; */
+    overflow:hidden;
+}
+
+.frm{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:400px;
+    height:250px;
+    background-color:purple;
+    border-radius: 10px;
+
+}
+.frm h1{
+    text-align:center;
+    padding:0 0 20px 0;
+    border-bottom: 3px  solid saddlebrown;
+}
+.frm .ext-field{
+    position:relative;
+    border-bottom: 3px  solid saddlebrown;
+    margin:30px 0;
+
+}
+
+.sub{
+    display:flex;
+    height:50px;
+    width:20%;
+    text-align:center;
+    justify-content:center;
+   position: bottom ;
+
+}
