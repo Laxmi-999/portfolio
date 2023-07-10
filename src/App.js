@@ -14,7 +14,7 @@ import TicketingPage from './components/forms/TicketingPage';
 
 class MyApp extends Component {
   render() {
-    return (
+    return (``
       // <BrowserRouter>
       //   <Routes>
       //     <Route path = "/" element={<loginform />}  />
@@ -35,6 +35,7 @@ class MyApp extends Component {
     //     <Route path="/ticketing" component={TicketingPage} />
     //   </Switch>
     // </Router>
+    // new code added for new
        <div>
 
          {/* <Loginform /> */}
