@@ -26,7 +26,7 @@ class MyApp extends Component {
 
       //   </Routes>
       // </BrowserRouter>
-    //   <Router>
+    //   <Router> 
     //   <Switch>
     //     <Route exact path="/" component={HomePage} />
     //     <Route path="/login" component={LoginFormPage} />
