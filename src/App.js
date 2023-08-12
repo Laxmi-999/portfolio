@@ -1,55 +1,53 @@
 // import logo from './logo.svg';
 import './App.css';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Loginform from "./components/forms/loginform"
+import {BrowserRouter, Routes,Route} from 'react-router-dom';
 import Navbar from './components/forms/navbar';
 import Herosection from './components/forms/herosection';
 import { Component } from 'react';
-import Homepage from './components/forms/HomePage.js';
-import Footer  from './components/forms/footer';
+import HomePage from './components/forms/HomePage';
+import Loginform from './components/forms/Loginform';
+import Footer from './components/forms/footer';
 import Destinations from './components/forms/Destinations';
 import BlogPage from './components/forms/BlogPage';
 import Media from './components/forms/Media';
 import TicketingPage from './components/forms/TicketingPage';
+import SignInPage from './components/forms/SignInPage';
+import LandingPage from './components/forms/LandingPage';
+import { NavLink } from 'react-router-dom';
+import LandingPageTest from './components/forms/LandingPage';
 
-class MyApp extends Component {
+class MyApp extends Component 
+{
   render() {
-    return (``
-      // <BrowserRouter>
-      //   <Routes>
-      //     <Route path = "/" element={<loginform />}  />
-      //     <Route path = "/" element={< HomePage />}  />
-      //     <Route path = "/" element={< Destinations />}  />
-      //     <Route path = "/" element={<BlogPage />}  />
-      //     <Route path = "/" element={<Media />}  />
-      //  <Route path = "/" element={<TicketingPage />}  />
+    return (
+     <>
+      <div>
+      <BrowserRouter>
+        <Routes>
+      
+          <Route exact path='/' Component={Loginform} />
+          <Route path='/signinpage' Component={SignInPage} />
+          <Route path='/landing_page' Component={LandingPageTest} />
+        </Routes>
+      </BrowserRouter>
+      {/* <LandingPage /> */}
+        {/* <Loginform />  */}
+        {/* <SignInPage />  */}
+           {/* <Navbar />  */}
+         {/* <HomePage />  */}
+        {/* < Destinations />    */}
+         {/* <Herosection />   */}
+         {/* <BlogPage />  */}
+           {/* <Media />  */}
+           {/* <TicketingPage />  */}
+           {/* <Footer />       */}
+        </div>
 
-      //   </Routes>
-      // </BrowserRouter>
-    //   <Router> 
-    //   <Switch>
-    //     <Route exact path="/" component={HomePage} />
-    //     <Route path="/login" component={LoginFormPage} />
-    //     <Route path="/destinations" component={Destination} />
-    //     <Route path="/media" component={MediaPage} />
-    //     <Route path="/ticketing" component={TicketingPage} />
-    //   </Switch>
-    // </Router>
-    // new code added for new
-       <div>
+     </>
+       
+        
+     );
+  };
+};
 
-         {/* <Loginform /> */}
-         <Navbar /> 
-       <Homepage />
-         {/* < Destinations />  */}
-         {/* <Herosection /> */}
-         {/* <BlogPage /> */}
-         {/* <Media /> */}
-         {/* <TicketingPage /> */}
-         <Footer />       
-      </div>
-
-    );
-  }
-}
 export default MyApp;

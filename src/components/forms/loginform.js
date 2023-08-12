@@ -1,48 +1,58 @@
 import React, { useState } from "react";
-import './loginform.css';
+import './Loginform.css';
+import { useNavigate } from 'react-router-dom';
+// import { useHistory } from "react-router-dom";
 
 
-const Loginform = () => {
+const Loginform = () =>
+ {
+    const navigate = useNavigate();
+    // let history = useHistory();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
     const [allEntry, setAllEntry] = useState([]);
 
     const submitForm = (e) => {
+    //     navigate.push('/landing_page');
+
+        
         e.preventDefault();
         const newEntry = { email: email, password: password }
         setAllEntry([...newEntry, newEntry]);
         console.log(setAllEntry);
+
     }
 
     return (
-        <div className="login">
+        <div className="login-container">
        
            
-            <frm>
+            {/* <frm> */}
                 <form action="" onSubmit={submitForm}>
-                    <div class="frm">
+                    <div className ="frm">
                      <h1>LOGIN</h1>
-
-                     <div className="text-field">
+                     <div className="email-field">
                        <label htmlfor="email">Email: </label>
                         <input type="text" name="email" id="em"
                             autoComplete="off" value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
+                        </div>
 
-                     </div>
-                    </div>
-
-                    <div class="center">
+                     <div class="password-field">
                         <label htmlfor="password">Password: </label>
                         <input type="password" name="password" id="pw"
                             autoComplete="off" value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <div className="sub">
-                        <button type="submit">Login</button>
+                    <div className="submit-login">
+                        <button type="submit" onClick={()=>{
+                            navigate('/landing_page');
+                        }}
+                        >Login</button>
+                    </div>
                     </div>
                 </form>
                 <div>
@@ -57,7 +67,7 @@ const Loginform = () => {
                         })
                     }
                 </div>
-            </frm>
+            {/* </frm> */}
         </div>
     )
 }

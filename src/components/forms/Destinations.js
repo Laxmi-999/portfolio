@@ -1,7 +1,5 @@
 import React from 'react';
 import './Destinations.css';
-import Mardi from './images/mardi.jpg';
-import Gosaikunda from './images/gosaikunda.jpg';
 const Destinations = () => {
     const destinations = [
         {

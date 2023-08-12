@@ -6,6 +6,7 @@
     background-size: cover;
     position: fixed;
     height: 10vh;
+    width: cover;
     padding: 5px 0;
     z-index: 9999;
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0.06); */

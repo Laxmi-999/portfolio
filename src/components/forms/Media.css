@@ -1,55 +1,72 @@
-.media-container {
-    padding: 4rem;
-  }
+/* YourComponent.css (or your main CSS file) */
+
+/* Style for the main heading */
+.main-heading {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* Style for the container holding the buttons */
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Style for the menu items */
+.Menu-tab {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* Style for the buttons */
+.btn {
+  height:fit-content;
+  width:fit-content;
+  font-size: 6rem;
+  border-radius: 3rem;
+  background-color: gold;
   
-  .media-heading {
-    font-size:5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+  margin: 0 7rem; /* Adjust the spacing between the buttons as needed */
+}
+.Menu-items {
+  /* Your CSS styles for the "Menu-items" div go here */
+  /* For example: */
+  background-color:antiquewhite;
+  padding: 20px;
+  height:cover;
+  width:cover;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top:10rem;
+  margin-bottom: 10rem;
+  align-self: center;
+  border: 1px solid #171616;
+  box-shadow: 10px;
+}
+/* .row{
+  height:cover;
+  width:cover;
+  background-color:blueviolet;
   
-  .media-grid {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-template-rows: repeat( auto-fit, minmax(300px, 2fr)); */
-    grid-template-columns: repeat(2, 1fr); /* Two columns*/
-    grid-template-rows: repeat(2, auto);    /*Two rows */
-    gap: 4rem;
-    height:70vh;
-    width:cover;
-  }
-  
-  .media-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-decoration: none;
-    color: #333333;
-  }
-  
-  .media-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .media-title {
-    font-size: 3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .media-description {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .media-image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    font-size:6rem;
-  }
+} */
+/* .row my-5{
+height:10rem;
+width:5rem;
+background-color: yellowgreen;
+} */
+/* .column-container col-11 mx-auto{
+height: 20rem;
+  width:10rem;
+  background-color:yellowgreen;
+} */
+/* .Item-inside{
+  height:20rem;
+  width:10rem;
+  color: black;
+} */
+
+
+
+
