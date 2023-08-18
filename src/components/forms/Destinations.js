@@ -1,48 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Destinations.css';
+import DestinationMenu from './destinationMenu.js';
+
 const Destinations = () => {
-    const destinations = [
-        {
-            name: 'Mardi Himal Trek',
-            description: ' we offer 3 days short and sweet trek to Mardi Himal',
-            imageUrl:'./images/mardi.jpg',
-        },
-        {
-            name: 'Gosaikunda Trek',
-            description: 'we offer 5 days amazing trek to Gosaikunda',
-            imageUrl: '',
-        },
-        {
-            name: 'ABC Trek',
-            description: 'Description of destination 3',
-            imageUrl: 'destination3.jpg',
-        },
-        {
-            name: 'Manang',
-            description: 'Description of destination 4',
-            imageUrl: 'destination4.jpg',
-        },
-    ];
-
+    const [dmenu, setItems] = useState(DestinationMenu);
     return (
-        <div className="destinations-container">
-            <h1 className="destinations-heading">Destinations</h1>
-            <div className="destination-grid">
+        <>
+            <h1 className='mt-5 text-center main-heading'>Choose your Favourite Destinations</h1>
 
-                {destinations.map((destination, index) => (
-                    <div className="destination-card" key={index}>
-                    {/* <figure>
-                        <img  src ={require('./images/mardi.jpg')} alt = {Gosaikunda} />
-                    </figure> */}
+            {/* My main destinations items */}
+            <div className='Destinations-container container-fluid mt-5'>
+                <div className='row'>
+                    <div className='col-11 mx-auto column-container'>
+                        <div className='row-before my-5  grid-container'>
 
-                        <img className="destination-image" src={destinations[index].imageUrl} alt={destination.name}  height={200} width={200}/>
-                        <h2 className="destination-name">{destination.name}</h2>
-                        <p className="destination-description">{destination.description}</p>
+                            {dmenu.map((curElem) => {
+                                const { id, name, image, description, price, feedback } = curElem;
+
+                                return (
+                                    <div  key={id} className='item1 col-12 col-md-6 col-lg-6 col-xl-6 grid-item'>
+                                        <div className='row item-inside'>
+                                            {/* For images only */}
+                                            <div className='img-div col-12 col-md-12 col-lg-4'>
+                                                <img src={image} alt={`Destination ${id}`} className='img-fluid' />
+                                            </div>
+                                            {/* For destination description */}
+                                            <div className='description container col-12 col-md-12 col-lg-8'>
+                                                <div className='destination-name '>
+                                                    <h1>{name}</h1>
+                                                    <p>{description}</p>
+                                                </div>
+                                                {/* <div className='package-price  d-flex'> */}
+                                                    {/* <div className='package-book d-flex justify-content-between'></div> */}
+                                                <div className = 'price'> <h2 >{price}</h2></div>
+                                                    <div className='button'>
+                                                           <a href="#">
+                                                            <button className='booking-btn'>Book Now</button>
+                                                           </a>
+                                                    </div>
+                                                {/* </div> */}
+                                                <p className='feedback'>{feedback}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
-                ))}
+                </div>
             </div>
-        </div>
+        </>
     );
-};
+
+
+}
+
+
+
 
 export default Destinations;

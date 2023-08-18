@@ -1,65 +1,136 @@
-.destinations-container {
-    padding: 2rem;
-    background-color: antiquewhite;
-  }
-  
-  .destinations-heading {
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 20rem;
-  }
-  
-  .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns*/
-    grid-template-rows: repeat(2, auto);    /*Two rows */
-    gap: 5rem;
-  }
-  
-  .destination-card {
-    /* background-image: url('C:\REACTPROJECT\navapp\src\components\images\mardi.jpg'); */
-    background-color:lightblue;
-    padding: 1.5rem;
-    /* border-radius: 4px; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    height:1000px;
-    width:2000px;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    margin-bottom: 40rem;
+/* Add this CSS to your stylesheet */
 
-  }
-  .destination-card + .destination-card {
-    margin-top: 4rem; /* Vertical space between dives */
-  }
+/* Styles for the Destinations item */
+.Destinations-container {
+  background-color: white;
+  /* padding: 40px 40px; */
+  /* margin-left: 40px; */
+  margin-right: 40px;
+  margin-left: 40px;
+  display: grid;
+  /* grid-template-columns: repeat(2, minmax(300px, 1fr)); Display two items per row */
+  gap: 20px;
+}
+
+/* Style for the item container */
+.item1 {
+  border-radius: 10px;
+  box-shadow: 0px 50px 50px rgba(20, 30, 30, 4);
+  padding: 20px;
+  height: fit-content;
+  width: 80vh;
+  margin-bottom: 5rem;
+  /* background-color: aqua; */
+  border-radius: 3rem;
+  height: 80%;
+  width:90%;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 10%;
+  margin-bottom:10%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.item-inside {
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.column-container{
+  padding-bottom: 6%;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  width: fit-content;
+  column-gap: 5rem;
+  margin-left: 5%;
+  justify-content: center;
+}
+/* Style for the image */
+.img-div img {
+  margin: 2rem;
+  width: 40vh;
+  height: 45vh;
+  border-radius: 5px;
+}
+.img-div:hover img {
+  transform: scale(0.95); /* Increase the scale for a zoom effect on hover */
+}
+
+/* Style for the destination description */
+.description-container {
+  margin-top: 10rem;
+  justify-content: center;
   
-  .destination-card:nth-child(odd) {
-    margin-right: 4rem; /* Horizontal space between dives */
-  }
+}
+
+.destination-name h1 {
+  margin-bottom: 40px;
+  margin-top: 5px;
+  font-size: 4rem;
+}
+
+/* for destination description */
+.destination-name p {
+  margin-top: 5rem;
+  height: fit-content;
+  width: fit-content;
+  padding-right:2rem;
+  font-size: 3rem;
+  color: #666;
+  font-style: calc();
+}
+.feedback {
+  margin-top: 15rem;
+  font-size: 3rem;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 5rem;
+
+}
+
+.price{
+  height:fit-content;
+  width:fit-content;
   
-  .destination-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .destination-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  .destination-name {
-    font-size: 5rem;
-    margin-bottom: 0.5rem;
+}
+
+
+.price h2 {
+  display: block;
+  margin-top: 10rem;
+  font-size: 4rem;
+  width:fit-content;
+
+}
+
+.booking-btn{
+  margin-top:1rem;
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: fit-content;
+  width:fit-content;
+  font-size: 3rem;
+  font-style: bold;
+}
+
+
+/* Add responsive styles as needed */
+@media (max-width: 768px) {
+  .item1 {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    /* text-decoration-color: orange; */
-    color: orange;
   }
-  
-  .destination-description {
-    font-size: 5rem;
-    text-align: center;
+  .img-div {
+    margin: 1rem;
   }
-  
+}
