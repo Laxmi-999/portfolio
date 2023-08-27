@@ -103,13 +103,10 @@ import React, { useState } from 'react';
 
 
 const NavigationBar = ({ handleNavClick, activeComponent }) => {
-    const [selectedComponent, setSelectedComponent] = useState('home');
-    const handleAction = (component) => {
-        setSelectedComponent(component);
-    };
+
 
     const getComponentStyle = (componentName) => {
-        if (componentName === selectedComponent) {
+        if (componentName === activeComponent) {
             // Apply active component styles
             return {
                 color: 'yellow',
@@ -117,7 +114,7 @@ const NavigationBar = ({ handleNavClick, activeComponent }) => {
                 paddingRight: '100px',
                 textDecoration: 'underline',
                 fontSize: '100px',
-                
+
                 fontWeight: 'bold',
             };
         } else {
@@ -136,24 +133,19 @@ const NavigationBar = ({ handleNavClick, activeComponent }) => {
             <ul style={styles.nav}>
                 <li className={activeComponent === 'home' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('home');
-                    handleAction('home');
 
                 }} style={getComponentStyle('home')} >Home</li>
                 <li className={activeComponent === 'blog' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('blog');
-                    handleAction('blog');
                 }} style={getComponentStyle('blog')}>Blog</li>
                 <li className={activeComponent === 'media' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('media');
-                    handleAction('media');
                 }} style={getComponentStyle('media')}>Media</li>
                 <li className={activeComponent === 'destination' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('destination');
-                    handleAction('destination');
                 }} style={getComponentStyle('destination')}>Destination</li>
                 <li className={activeComponent === 'ticketing' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('ticketing');
-                    handleAction('ticketing');
 
                 }} style={getComponentStyle('ticketing')} >Ticketing</li>
             </ul>
@@ -172,12 +164,13 @@ const styles = {
     nav: {
         display: 'flex',
         listStyle: 'none',
-        
+
         justifyContent: 'end',
         alignItems: 'center',
         width: '100%',
         height: '100%',
-        backgroundColor: 'purple' },
+        backgroundColor: 'purple'
+    },
 
 };
 

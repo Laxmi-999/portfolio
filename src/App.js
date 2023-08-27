@@ -15,21 +15,29 @@ import SignInPage from './components/forms/SignInPage';
 import LandingPage from './components/forms/LandingPage';
 import { NavLink } from 'react-router-dom';
 import LandingPageTest from './components/forms/LandingPage';
-
+import Hotels from "./components/forms/Hotels";
+import PopUpBox from "./components/forms/PopUpBox";
 class MyApp extends Component 
 {
   render() {
     return (
      <>
       <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
       
           <Route exact path='/' Component={Loginform} />
           <Route path='/signinpage' Component={SignInPage} />
           <Route path='/landing_page' Component={LandingPageTest} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+
+
+
+
+
+      {/* <Hotels /> */}
       {/* <LandingPage /> */}
         {/* <Loginform />  */}
         {/* <SignInPage />  */}
@@ -41,6 +49,8 @@ class MyApp extends Component
            {/* <Media />  */}
            {/* <TicketingPage />  */}
            {/* <Footer />       */}
+
+           <PopUpBox />
         </div>
 
      </>

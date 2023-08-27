@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './Destinations.css';
+import TicketingPage from './TicketingPage';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import DestinationMenu from './destinationMenu.js';
 
-const Destinations = () => {
+const Destinations = ({ onClick }) => {
+
+
+
     const [dmenu, setItems] = useState(DestinationMenu);
     return (
         <>
@@ -18,7 +23,7 @@ const Destinations = () => {
                                 const { id, name, image, description, price, feedback } = curElem;
 
                                 return (
-                                    <div  key={id} className='item1 col-12 col-md-6 col-lg-6 col-xl-6 grid-item'>
+                                    <div key={id} className='item1 col-12 col-md-6 col-lg-6 col-xl-6 grid-item'>
                                         <div className='row item-inside'>
                                             {/* For images only */}
                                             <div className='img-div col-12 col-md-12 col-lg-4'>
@@ -31,13 +36,21 @@ const Destinations = () => {
                                                     <p>{description}</p>
                                                 </div>
                                                 {/* <div className='package-price  d-flex'> */}
-                                                    {/* <div className='package-book d-flex justify-content-between'></div> */}
-                                                <div className = 'price'> <h2 >{price}</h2></div>
-                                                    <div className='button'>
-                                                           <a href="#">
-                                                            <button className='booking-btn'>Book Now</button>
-                                                           </a>
-                                                    </div>
+                                                {/* <div className='package-book d-flex justify-content-between'></div> */}
+                                                <div className='price'> <h2 >{price}</h2></div>
+                                                <div className='button'>
+                                                    <a href="#">
+                                                        <button
+                                                            onClick={() => {
+                                                                onClick('ticketing');
+
+                                                            }} className='booking-btn'>Book Now</button>
+                                                        {/* <Routes>
+                                                                <Route path="/" element={<Destinations />} />
+                                                                <Route path="/TicketingPage" element={<TicketingPage />} />
+                                                                </Routes> */}
+                                                    </a>
+                                                </div>
                                                 {/* </div> */}
                                                 <p className='feedback'>{feedback}</p>
                                             </div>
@@ -48,7 +61,7 @@ const Destinations = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 

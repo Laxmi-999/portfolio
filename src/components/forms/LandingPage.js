@@ -16,38 +16,37 @@ const LandingPageTest = () => {
 
     const handleNavClick = (component) => {
         // component="home"
-        
-        
+
+
         setActiveComponent(component); //changing activeComponent
     };
 
 
     // div<onClick> classname "home"?
-        // div<onClick ()=> class name "destination">
+    // div<onClick ()=> class name "destination">
 
-            // div<onClick>
+    // div<onClick>
 
-                // div<onClick>
+    // div<onClick>
 
 
     return (
 
         <div>
             {/* home click-"Home" */}
-            <NavigationBar handleNavClick={handleNavClick} />
-
-   
-   
-         
-                {activeComponent === 'home' && <HomePage />}
-                {activeComponent === 'blog' && <BlogPage />}
-                {activeComponent === 'destination' && <Destinations />}
-                {activeComponent === 'media' && <Media />}
-                {activeComponent === 'ticketing' && <TicketingPage />}
+            <NavigationBar handleNavClick={handleNavClick} activeComponent={activeComponent} />
 
 
 
-    
+            {activeComponent === 'home' && <HomePage />}
+            {activeComponent === 'blog' && <BlogPage />}
+            {activeComponent === 'destination' && <Destinations onClick={handleNavClick} />}
+            {activeComponent === 'media' && <Media />}
+            {activeComponent === 'ticketing' && <TicketingPage />}
+
+
+
+
             <Footer />
 
 

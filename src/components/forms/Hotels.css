@@ -1,0 +1,181 @@
+
+
+.detailContainer{
+    border: 1px solid blue;
+     display: inline-flex;
+     gap:2rem;
+     justify-content: space-between;
+     margin:5rem;
+     padding: 2rem;
+     width:fit-content;
+     background-color: aliceblue;
+    
+}
+.img-container{
+    /* background-color: brown; */
+    align-items: center;
+    /* padding:30px; */
+    
+}
+
+.HotelImg{
+    width:200px;
+    height:fit-content;
+    object-fit: cover;
+    /* background-color: pink; */
+  
+}
+.hotelDescription{
+    /* background-color:pink; */
+    justify-content: center;
+    height: cover;
+    display: grid;
+    padding:30px;
+    padding-top: 2rem;
+
+    /* padding:0 2rem 2rem 4rem; */
+}
+.hotelHeading{
+    
+    /* width: fit-content; */
+    /* background-color: blueviolet; */
+    height:fit-content;
+    width: fit-content;
+    width: 100%;
+    padding:0px 2px 1px 2px;
+}
+
+.hotelHeading .hotelName{
+    /* background-color: antiquewhite; */
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.attraction{
+    height:fit-content;
+    width:fit-content;
+    background-color: darkblue;
+    color:white;
+    font-size: 1rem;
+    border:3px;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 2rem;
+}
+.description-container{
+    margin-top: 0%;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    /* background-color: brown; */
+}
+.description-container .hotelFacility{
+    font-size: 18px;
+}
+.description-container .hotelFeature{
+    color:darkblue;
+    font-weight: bold;
+}
+.description-container .hotelCancelation{
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.hotelDetails{
+    /* background-color: yellow;
+    border: 1px solid black; */
+    display:grid;
+    padding-top: 3rem;
+    gap:3rem;
+
+
+}
+.rating-container{
+    /* background-color: blueviolet; */
+    justify-content: space-between;
+    width:100%;
+    gap:3rem;
+    display: inline-flex;
+    height:fit-content;
+
+
+    
+}
+.rating-container .rating-text
+{ 
+
+    /* background-color: aqua; */
+    height:fit-content;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-top: 0%;
+}
+.rating-container>button{
+    background-color:darkblue;
+    color:white;
+    border-radius:2px;
+    /* border:4px black; */
+    height:fit-content;
+    width:fit-content;
+    padding:5px;
+    margin-top: 0%;
+    margin-left:0%;
+    font-size: 1rem;
+    /* align-self: flex-end; */
+    justify-content:right;
+}
+
+
+.checkDetails{
+    /* background-color: brown; */
+    display:grid;
+    justify-content: space-between;
+    gap:5px;
+    margin-top: 3rem;
+    height: fit-content;
+    width:fit-content;
+}
+.checkDetails .price{
+    /* background-color: blue; */
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-left:10rem;
+}
+.checkDetails .charge-details{
+    /* background-color: blue; */
+    display: flex;
+    font-size:1.5rem;
+    color:lightslategray;
+    margin-left:7rem;
+
+}
+.checkDetails>button{
+    height:fit-content;
+    width: 100%;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    border-radius: 3px;
+    background-color: darkblue;
+    font-size:1rem;
+    color:white;
+    margin-top: 4px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.grid-item{
+    /* background-color: brown; */
+    display:inline-grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(2, minmax(300px, 1fr)); */
+}
+.item-inside{
+ /* background-color: aqua; */
+ /* display:grid; */
+ grid-template-columns: 1fr;
+}

@@ -1,34 +1,89 @@
 .blog-container {
-    padding: 10rem;
-    /* height: 500px; */
-    width:cover;
+    height:fit-content;
+    width:100%;
+    padding-left:0%;
+    /* background-color: brown; */
+    justify-items: center;
+    background-color: white;
+    
     
   }
-  
+  .experience{
+    background-color: white;
+    box-shadow: 0 20px 50px 20px rgba(0, 0, 0, 0.1);
+    width:fit-content;
+    height:fit-content;
+    margin-left: 32%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+  }
+  .experience>span{
+   font-size: 4rem;
+   font-style: calc();
+   padding:1rem;
+   color:black;
+   /* margin-left: 4rem;
+   margin-right: 4rem; */
+   /* background-color: black; */
+  }
   .blog-heading {
+    /* background-color: aqua; */
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px 20px rgb(0,0,0,0.5);
+    padding:2%;
+    margin-left:35%;
+    justify-self: center;
+    height: fit-content;
+    align-self: center;
+    width:fit-content;
     font-size: 5rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 0%;
+  }
+  .post-container{
+    height:fit-content;
+    width:fit-content;
+     padding:5%;
+     margin-left: 4rem;
+     display:grid;
+     border-radius: 3rem;
+     gap:5vh;
+    /* background-color: teal; */
+    background-color: aliceblue;
   }
   
-  .blog-post {
-    background-color:antiquewhite;
+  .post-container .blog-post {
+    
+    /* background-color:pink; */
+    background-color: aliceblue;
     padding: 3rem;
     height:500px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: 0 10px 40px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 5rem;
 
   }
   
-  .post-title {
-    font-size: 3rem;
-    font-style:italic;
+  .post-container .post-title {
+    font-size: 4rem;
+    text-justify: center;
+    justify-content: center;
+    font-style:normal;
+    font-weight: bold;
+    align-content: center;
     color:orangered;
     margin-bottom: 0.5rem;
   }
   
-  .post-content {
+  .post-container .post-content {
     font-size: 4rem;
     margin-bottom: 1.5rem;
     color:black;
@@ -36,17 +91,17 @@
 
   }
   
-  .post-meta {
-    display: flex;
-    justify-content: space-between;
+  .post-container .post-meta {
+    display: grid;
+    justify-content:right;
   }
   
-  .post-author {
+  .post-container .post-author {
     font-size: 3rem;
     color:salmon;
   }
   
-  .post-date {
+  .post-container .post-date {
     font-size: 3rem;
     color:blueviolet;
   }

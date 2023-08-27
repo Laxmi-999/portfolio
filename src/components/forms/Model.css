@@ -1,0 +1,254 @@
+.form-container{
+    background-color: lightskyblue;
+    justify-content: center;
+    border-radius: 2rem;
+    align-self:center;
+    height:fit-content;
+    width:fit-content;
+    padding:3rem;
+    margin:5rem;
+    display:grid;
+    gap:5rem;
+}
+.form-container h2{
+    /* background-color: violet; */
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: calc();
+    width: fit-content;
+    align-content: center;
+    justify-self: center;
+    padding:1%;
+    margin:1%;
+}
+.form-Items-container{
+    /* background-color: tomato; */
+    padding:1%;
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    padding:5rem;
+}
+.name-container{
+    /* background-color: blue; */
+    height:fit-content;
+    width:100%;
+    padding:2%;
+    justify-content: space-between;
+    gap:10rem;
+    display:inline-flex;
+}
+.name-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    width: fit-content;
+    padding:1rem;
+    display:inline-flex;
+    margin-right: 2%;
+}
+.name-container input[type="text"]{
+    /* background-color: blueviolet; */
+    border-radius: 1rem;
+    margin-right: 0%;
+}
+.address-container{
+     /* background-color: blue; */
+     height:fit-content;
+     width:100%;
+     padding:2%;
+     justify-content: space-between;
+     gap:12rem;
+     display:inline-flex;
+}
+.address-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    width: fit-content;
+    padding:1rem;
+    display:inline-flex;
+    margin-right: 2%;
+}
+.address-container input[type="text"]{
+    /* background-color: blueviolet; */
+    border-radius: 1rem;
+    margin-right: 0%;
+}
+.email-container{
+    /* background-color: blue; */
+    height:fit-content;
+    width:100%;
+    padding:2%;
+    justify-content: space-between;
+    gap:10rem;
+    display:inline-flex;
+}
+.email-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    width: fit-content;
+    padding:1rem;
+    display:inline-flex;
+    margin-right: 2%;
+}
+.email-container input[type="email"]{
+    /* background-color: blueviolet; */
+     /* background-color: blueviolet; */
+     border-radius: 1rem;
+     margin-right: 0%;
+}
+.contactNum-container{
+       /* background-color: blue; */
+       height:fit-content;
+       width:fit-content;
+       /* padding:2rem; */
+       justify-content: space-between;
+       padding:2%;
+       gap:5rem;
+       display:inline-flex;
+}
+.contactNum-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    width: 40%;
+    /* padding:1rem; */
+    display:inline-flex;
+    margin-right: 2%;
+}
+.contactNum-container input[type="tel"]{
+    /* background-color: blueviolet; */
+    border-radius: 1rem;
+    margin-right: 0%;
+}
+.date-container{
+       /* background-color: blue; */
+       height:fit-content;
+       width:fit-content;
+       padding-right: 0%;
+       /* padding:2rem; */
+       justify-content: space-between;
+       /* gap:10rem; */
+       display:inline-flex;
+}
+.date-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    width:50%;
+
+    /* padding:1rem; */
+    display:inline-flex;
+    margin: 2%;
+}
+.date-container input[type="text"]{
+    /* background-color: blueviolet; */
+    border-radius: 1rem;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 0%;
+}
+/* .ticketType-container{
+    background-color: blue;
+    height:fit-content;
+    width:100%;
+    padding:2rem;
+    justify-content: space-between;
+    gap:10rem;
+    display:inline-flex;
+}
+.ticketType-container label{
+    background-color: yellow;
+    font-size:2.5rem;
+    height:fit-content;
+    width:fit-content;
+    margin-right:2%;
+    padding:1rem;
+}
+.ticketType-container select {
+    height:5vh;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    background-color: blueviolet;
+  } */
+  
+/* .ticketType-container input[type="text"]{
+    background-color: blueviolet;
+    border-radius: 1rem;
+    margin-right: 0%;
+} */
+.ticketNumber-container{
+   /* background-color: blue; */
+   height:fit-content;
+   width:fit-content;
+   padding:2%;
+   justify-content: space-between;
+   gap:7rem;
+   display:inline-flex;
+}
+.ticketNumber-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    height: fit-content;
+    width:40%;
+    display:inline-flex;
+    margin-right: 0%;
+}
+.ticketNumber-container input[type="number"]{
+    /* background-color: blueviolet; */
+    border-radius: 1rem;
+    margin-right:0%;
+    margin-left: 0%;
+}
+.comment-container{
+   /* background-color: blue; */
+   height:fit-content;
+   width:100%;
+   /* margin: 2%; */
+   padding:2%;
+   justify-content: space-between;
+   /* gap:5rem; */
+   display:inline-flex;
+}
+.comment-container label{
+    /* background-color: yellow; */
+    font-size:2.5rem;
+    height: fit-content;
+    width: 45%;
+    /* padding:1rem; */
+    display:inline-flex;
+    margin-right: 2%;
+}
+.comment-container textarea{
+    /* background-color: blueviolet; */
+    width:50%;
+    font-size: 2rem;
+}
+.button-container{
+   /* background-color: blue; */
+   height:fit-content;
+   width:fit-content;
+   margin-top: 10%;
+    padding:2%;
+    margin-right: 0%;
+    margin-left:75%;
+    gap:2rem;
+    display:inline-flex;
+}
+.button-container>button{
+    height:fit-content;
+    width: fit-content;
+    padding:1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-left: 5%;
+    /* margin-right: 0%; */
+    margin-top: 0%;
+}
+/* .input-container{
+    background-color: teal;
+    display:inline-grid;
+} */

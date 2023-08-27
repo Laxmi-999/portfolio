@@ -4,7 +4,7 @@ import './BlogPage.css';
 const BlogPage = () => {
   const blogPosts = [
     {
-      title: 'POST 1',
+      title: 'my journey to Mardi',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis tellus vitae purus euismod lobortis. Sed vitae magna vel orci rutrum convallis ac at turpis.',
       author: 'John Doe',
       date: 'June 1, 2023',
@@ -33,8 +33,13 @@ const BlogPage = () => {
 
   return (
     <div className="blog-container">
-      <h1 className="blog-heading">Blog</h1>
-      {blogPosts.map((post, index) => (
+    <div className='experience'>
+    <span>Here you can share your experience of travelling with us.
+        </span>
+    </div>
+      <h1 className="blog-heading">Blog Posts by Customers</h1>
+     <div className='post-container'>
+     {blogPosts.map((post, index) => (
         <div className="blog-post" key={index}>
           <h2 className="post-title">{post.title}</h2>
           <p className="post-content">{post.content}</p>
@@ -44,6 +49,8 @@ const BlogPage = () => {
           </div>
         </div>
       ))}
+     </div>
+      
     </div>
   );
 };
