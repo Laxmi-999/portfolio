@@ -27,6 +27,7 @@
     display: grid;
     height: fit-content;
     width: fit-content;
+    
     padding:5rem;
 }
 .name-container{
