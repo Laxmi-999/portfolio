@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { render, screen } from '@testing-library/react';
 import './index.css';
 import MyApp from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 
-ReactDOM.render(
+render(
   <React.StrictMode>
+  
+  
     <MyApp />
   </React.StrictMode>,
   document.getElementById('root')

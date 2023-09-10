@@ -1,15 +1,16 @@
-.nav {
-    /* display: flex;
-    align-items: center; */
-    /* justify-content: space-between; */
-    /* padding: 20px 80px; */
+/* .nav {
+    display: flex;
+    align-items: center; 
+     justify-content: space-between; 
+     padding: 20px 80px;
     background-size: cover;
     position: fixed;
+    position: sticky;
     height: 10vh;
     width: cover;
     padding: 5px 0;
     z-index: 9999;
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0.06); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0.06);
 }
 .navbar-container {
     background-color:purple;
@@ -98,4 +99,4 @@ color: orange;
         cursor: grabbing;
     }
 
-}
+} */

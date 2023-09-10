@@ -6,8 +6,6 @@ import './image_grid.css';
 import MediaMenuItem from './MediaMenuItem';
 import MediaCatMenu from './MediaCatMenu';
 
-
-
 const Media = () => {
   const [original] = useState(Menu);
 
@@ -40,10 +38,10 @@ const Media = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <h1 className='mt-5 text-center main-heading'>Here we go</h1>
 
-      </div>
+      </div> */}
       {/* out menu category  goes here */}
       <MediaCatMenu filterItem={filterItem} catItems={catItems} />
 

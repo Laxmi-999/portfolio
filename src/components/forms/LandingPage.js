@@ -11,29 +11,34 @@ import Footer from './footer';
 
 
 // App component
+
+const defaultDestination = {
+    id: "",
+    name: "",
+    imageUrl: "",
+    price: 0,
+    description: ""
+
+};
 const LandingPageTest = () => {
     const [activeComponent, setActiveComponent] = useState('home');
-
-    const handleNavClick = (component) => {
-        // component="home"
+    const [selectedDestination, setSelectedDestination] = useState(defaultDestination);
 
 
-        setActiveComponent(component); //changing activeComponent
+    const handleNavClick = (component, selectedDestination = defaultDestination) => {
+
+
+        setActiveComponent(component);
+        setSelectedDestination(selectedDestination);
     };
 
 
-    // div<onClick> classname "home"?
-    // div<onClick ()=> class name "destination">
 
-    // div<onClick>
-
-    // div<onClick>
 
 
     return (
 
         <div>
-            {/* home click-"Home" */}
             <NavigationBar handleNavClick={handleNavClick} activeComponent={activeComponent} />
 
 
@@ -42,7 +47,7 @@ const LandingPageTest = () => {
             {activeComponent === 'blog' && <BlogPage />}
             {activeComponent === 'destination' && <Destinations onClick={handleNavClick} />}
             {activeComponent === 'media' && <Media />}
-            {activeComponent === 'ticketing' && <TicketingPage />}
+            {/* {activeComponent === 'ticketing' && <TicketingPage selectedDestination={selectedDestination} />} */}
 
 
 

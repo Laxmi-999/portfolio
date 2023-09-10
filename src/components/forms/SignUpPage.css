@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background:blue; */
+  /* background: linear-gradient(to bottom,#7ff0ce, #7ff0ce); */
+  
+}
+.signin-container {
+  height:fit-content;
+  width:fit-content;
+  align-self: center;
+  justify-self: center;
+  margin-left:110rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 40rem;
+  /* background-color: aqua; */
+  /* display:grid; */
+  background-color: #f7f7f7;
+  border-radius: 2rem;
+  border: 1px solid #0a0a0a;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* background: white; */
+  }
+  
+  h1 {
+    /* background-color: #007bff; */
+    margin-top:0%;
+
+    /* padding:2%; */
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 6rem;
+    height: fit-content;
+    width:fit-content;
+  }
+  
+  .form-group {
+    /* background-color: brown; */
+    display: inline-flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    gap:2rem;
+  
+  }
+  /* .form-group2 {
+    background-color: brown;
+    display: inline-flex;
+    margin-bottom: 1rem;
+  } */
+  .input-container{
+    display:grid;
+    align-content: center;
+    justify-content: left;
+    gap:5rem;
+    /* background-color: yellow; */
+    padding:2%;
+  }
+  label {
+    /* background-color: #007bff; */
+    height:fit-content;
+    width:fit-content;
+    padding:1%;
+    display: block;
+    margin-bottom: 0.5rem;
+    /* margin-right: 150vh; */
+    font-weight: bold;
+    font-size: 3rem;
+    color:black;
+    align-items: left;
+    /* text-align: center; */
+ 
+  }
+ 
+  
+  input {
+    width: 60%;
+    height:fit-content;
+    width: fit-content;
+    padding:2%;
+    border-radius: 4px;
+    border: 1px solid #0a0a0a;
+    outline: none;
+    font-size: 3rem;
+    /* margin-right: 30vh; */
+
+
+    
+  }
+ 
+  .SignUp{
+    display: block;
+    width: 100%;
+    height:fit-content;
+    /* margin-top: 10rem; */
+    /* margin-left: 40rem; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 10%;
+    background-color: blue;
+    color:black;
+    border:#0056b3 ;
+    border-radius: 3rem;
+    cursor: pointer;
+    color:white;
+    font-size: 2.5rem;
+    font-style: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .outer{
+    /* background-color: tomato; */
+    margin-top: 5%;
+    height: fit-content;
+    width: fit-content;
+    padding:2%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap:1rem;
+  }
+  .outer>span{
+    font-weight: bold;
+    font-size: 2.5rem;
+    }
+    .outer>button{
+    
+      font-size: 2.5rem;
+      height:fit-content;
+      width: fit-content;
+      font-style: normal;
+      text-decoration: underline;
+      color: gray;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      border: 0px;
+    }
+    button:hover {
+      background-color:blue;
+      cursor: pointer;
+      color:white;
+    }
+  .errMsg{
+  font-size: 2rem;
+  color:red;
+  height: fit-content;
+  width:fit-content;
+  padding:1%;
+
+ }
+  

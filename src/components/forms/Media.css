@@ -4,6 +4,10 @@
 .main-heading {
   margin-top: 5rem;
   text-align: center;
+  padding:2%;
+  margin-left:50%;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Style for the container holding the buttons */
@@ -25,16 +29,18 @@
   height:fit-content;
   width:fit-content;
   font-size: 6rem;
+  margin-top: 2%;
+  padding:2%;
   border-radius: 3rem;
-  background-color: gold;
+  background-color: blue;
   
   margin: 0 7rem; /* Adjust the spacing between the buttons as needed */
 }
 .Menu-items {
   /* Your CSS styles for the "Menu-items" div go here */
   /* For example: */
-  background-color:antiquewhite;
-  padding: 20px;
+  /* background-color:antiquewhite; */
+  padding: 2%;
   height:cover;
   width:cover;
   margin-left: 10rem;
@@ -42,8 +48,14 @@
   margin-top:10rem;
   margin-bottom: 10rem;
   align-self: center;
-  border: 1px solid #171616;
+  /* border: 1px solid #171616; */
   box-shadow: 10px;
+}
+.custom-grid{
+  justify-content: space-around;
+  gap:3rem;
+  padding-top: 5%;
+  background-color: aqua;
 }
 /* .row{
   height:cover;

@@ -8,20 +8,43 @@
   margin-right: 3rem; */
   margin-bottom:8vh;
 }
+.headerButton{
+  height: fit-content;
+  width:fit-content;
+  padding:1%;
+  border-radius: 2rem;
+  color:white;
+  font-size: 3rem;
+  align-self: right;
+  justify-self: right;
+  /* margin-left: 0%;
+  margin-right:20%;
+  margin-top: 2%; */
+  font-weight: bold;
+  background-color:darkblue;
+}
+/* .buttons{
+  height:fit-content;
+  width: fit-content;
+  padding: 2%;
+  background-color: black;
+} */
 
 .headerContainer{
   /* background-color: aqua; */
   /* display: flex; */
   size: 2rem;
   width: fit-content;
+  padding-top:0%;
+  height: fit-content;
+  width: fit-content;
   /* max-width: 1024px; */
-  margin:20px 0px 100px 0px;
+  margin:5% 0px 100px 0px;
   /* position:relative; */
 }
 
-
 .headerList{
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
   width: fit-content;
   display: flex;
   gap:30rem;
@@ -47,17 +70,14 @@
   /* background-color: violet; */
 }
 .headerTitle{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 20%;
   display: flex;
   font-size: 5rem;
 }
 .headerDesc{
   font-size: 4rem;
-}
-.headerButton{
-  width:fit-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-weight: bold;
 }
 
 
@@ -73,6 +93,7 @@
   border-radius: 2rem;
   border-color: solid yellow;
   justify-content:space-between;
+  box-shadow: 0px 50px 50px rgba(20, 30, 30, 4);
   align-items: center;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -82,6 +103,9 @@
 }
 .headerSearchItems{
   width: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
   /* background-color: chartreuse; */
 }
 .searchIcon{
@@ -96,7 +120,7 @@
   margin-right:8rem;
   width: fit-content;
   font-size: 2.5rem;
-  background-color:lightskyblue;
+  background-color:lightblue;
 }
 .headerSearchDate{
   margin-right:4rem;
@@ -190,15 +214,15 @@ background-color: lightgray;
   background-color: blueviolet;
 } */
 .booking-confirmation{
-justify-content: space-between;
 gap:5px;
-margin-left: 30%;
-margin-top: 5%;
-margin-bottom: 20vh;
+margin-left: 40%;
+margin-top: 18%;
+margin-bottom:3%;
 height: fit-content;
 align-items: center;
-/* width: 100%; */
-/* position: absolute; */
+width: fit-content;
+font-size: 3rem;
+position: absolute;
 background-color:white;
 border-radius: 3rem;
 box-shadow: 0px 50px 50px rgba(20, 30, 30, 4);
@@ -208,20 +232,68 @@ display: inline-flex;
 padding:2rem;
 
 }
-.booking-confirmation>span{
-  font-size:4rem;
-  color:black;
+.Details-container{
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 50px 50px rgba(20, 30, 30, 4);
+  display: inline-flex;
+  margin-top: 30%;
+  padding:1%;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+
 }
-.booking-confirmation>button{
+.input-container{
+  /* margin-top:10%; */
+  height: fit-content;
+  width: 100%;
+  /* padding:1%; */
+  /* background-color: pink; */
+  margin-left: 1rem;
+  display: inline-flex;
+  /* justify-content: space-between; */
+  /* gap:2%; */
+}
+.input-container>label{
+  background-color: blueviolet;
+}
+.input-field{
+  position: relative;
+  display: inline-flex;
+  margin-top: 0%;
+}
+.input-field>input{
+  background-color: lightblue;
+}
+.open-model-button{
+  background-color: blue;
+  color:white;
   height:fit-content;
   width: fit-content;
   border-radius: 2rem;
   border: 4px;
-  position: relative;
+  justify-items: center;
+  align-self: center;
+ position: absolute;
   margin-bottom:3%;
   padding:2rem;
-  /* margin-left: 100%; */
+  font-size: 3rem;
+  margin-left: 50%;
+  margin-top: 15%;
   /* margin-right: 0%; */
   /* margin-bottom: 50vh; */
-
+}
+.loader{
+  height:fit-content;
+  width:fit-content;
+  padding:2%;
+  margin-left: 10%;
+  position: absolute;
+  margin-bottom: 0%;
+  background-color:pink;
+  font-size: 5rem;
+  color:black;
+  align-content: center;
+  justify-content: center;
 }

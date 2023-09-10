@@ -1,8 +1,11 @@
 /* Add this CSS to your stylesheet */
 
 /* Styles for the Destinations item */
+body{
+  background-color: aliceblue;
+}
 .Destinations-container {
-  background-color: white;
+  background-color:white;
   /* padding: 40px 40px; */
   /* margin-left: 40px; */
   margin-right: 40px;
@@ -11,7 +14,13 @@
   /* grid-template-columns: repeat(2, minmax(300px, 1fr)); Display two items per row */
   gap: 20px;
 }
+.Destinations-container>h1{
+  /* background-color: pink; */
+  margin-left: 30%;
+ justify-content: center;
+ text-align: center;
 
+}
 /* Style for the item container */
 .item1 {
   border-radius: 10px;
@@ -41,6 +50,7 @@
 }
 .column-container{
   padding-bottom: 6%;
+
 }
 .grid-container{
   display: grid;
@@ -67,6 +77,7 @@
   justify-content: center;
   
 }
+
 
 .destination-name h1 {
   margin-bottom: 40px;
@@ -102,24 +113,42 @@
 
 
 .price h2 {
+  
   display: block;
   margin-top: 10rem;
   font-size: 4rem;
   width:fit-content;
 
 }
+.destination-loader{
+  background-color:white;
+  font-size: 5em;
+  text-align: center;
+  height: cover;
+  width:100%;
+  padding:2%;
+}
 
 .booking-btn{
   margin-top:1rem;
+  margin-right: 0%;
   display: block;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right:2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   height: fit-content;
   width:fit-content;
   font-size: 3rem;
   font-style: bold;
+}
+.button{
+  height: fit-content;
+  width: fit-content;
+  background-color: pink;
+  margin-left: 50%;
+  padding-right: 0%;
+  margin-right: 0%;
 }
 
 

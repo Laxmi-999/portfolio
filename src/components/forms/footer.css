@@ -1,26 +1,27 @@
 .footer {
-    background-color: #333;
+    background-color: #161757;
     color: #fff;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
-    height: 20rem;
+    height:fit-content;
     /* width: cover; */
     /* display: flex; */
-       position: fixed;
+       position: static;
         left: 0;
         bottom: 0;
         width: 100%;
-        
-        
-        
-     
-
 }
 
-.footer-content {
+.footer-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap:3%;
+    /* padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 3%; */
+    align-items: flex-start;
+    /* background-color: yellow; */
    
 }
 
@@ -29,4 +30,80 @@
     align-content: center;
     padding:2rem;
     font-size: 4rem;
+}
+.about-footer{
+    /* background-color: aqua; */
+    height:100%;
+    width: fit-content;
+    margin-left: 20%;
+    padding:1%;
+    justify-self: left;
+    align-self: left; 
+}
+.about-footer>h4{
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 10%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+
+}
+.links-items
+{
+    /* background-color: turquoise; */
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.privacy{
+    /* background-color: tomato; */
+    height:100%;
+    width: fit-content;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    padding:1%;
+    justify-self: left;
+    align-self: left;
+}
+.privacy>h4{
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 10%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+}
+.privacy-list{
+    /* background-color: turquoise; */
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.footer-contact{
+    /* background-color: wheat; */
+    height:100%;
+    width: fit-content;
+    margin-right:20%;
+    padding:1%;
+    justify-self: left;
+    align-self: left;
+}
+.footer-contact>h5{
+    /* background-color: yellow; */
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 10%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+}
+.contact-list{
+    /* background-color: turquoise; */
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+
 }

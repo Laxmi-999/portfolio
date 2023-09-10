@@ -1,12 +1,13 @@
 .form-container{
     background-color: lightskyblue;
-    justify-content: center;
+    justify-content:center;
     border-radius: 2rem;
-    align-self:center;
+   align-self: center;
     height:fit-content;
     width:fit-content;
     padding:3rem;
-    margin:5rem;
+    margin-top: 4rem;
+    margin-left: 40%;
     display:grid;
     gap:5rem;
 }
@@ -27,7 +28,7 @@
     display: grid;
     height: fit-content;
     width: fit-content;
-    
+
     padding:5rem;
 }
 .name-container{
@@ -253,3 +254,10 @@
     background-color: teal;
     display:inline-grid;
 } */
+/* .placeholder{
+    font-size: 1rem;
+} */
+input::placeholder,
+textarea::placeholder {
+  font-size: 2rem; /* Adjust the size as needed */
+}

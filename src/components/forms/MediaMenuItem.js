@@ -1,5 +1,7 @@
 import React from 'react'
 import ImageGrid from './image_grid';
+import './Media.css';
+
 
 const MediaMenuItem  = (props) =>{
     return(
@@ -44,7 +46,7 @@ const MediaMenuItem  = (props) =>{
 </div>
 
 </div>
-        </>
+ </>
     )
 }
 export default MediaMenuItem;

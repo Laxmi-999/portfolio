@@ -99,6 +99,7 @@
 // export default Navbar;
 
 // import React from 'react';
+
 import React, { useState } from 'react';
 
 
@@ -130,24 +131,38 @@ const NavigationBar = ({ handleNavClick, activeComponent }) => {
     };
     return (
         <div style={styles.container}>
+             <div className="navbar-container">
+                 <div className="logo-container">
+                 <img src=''></img>
+                </div>
+             </div>
             <ul style={styles.nav}>
-                <li className={activeComponent === 'home' ? 'active' : 'notActive'} onClick={() => {
-                    handleNavClick('home');
+                <li className={activeComponent === 'destination' ? 'active' : 'notActive'} onClick={() => {
+                    handleNavClick('destination');
+                }} style={getComponentStyle('destination')}>Destination</li>
 
-                }} style={getComponentStyle('home')} >Home</li>
                 <li className={activeComponent === 'blog' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('blog');
                 }} style={getComponentStyle('blog')}>Blog</li>
                 <li className={activeComponent === 'media' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('media');
                 }} style={getComponentStyle('media')}>Media</li>
-                <li className={activeComponent === 'destination' ? 'active' : 'notActive'} onClick={() => {
-                    handleNavClick('destination');
-                }} style={getComponentStyle('destination')}>Destination</li>
-                <li className={activeComponent === 'ticketing' ? 'active' : 'notActive'} onClick={() => {
+
+
+
+                {/* <li className={activeComponent === 'ticketing' ? 'active' : 'notActive'} onClick={() => {
                     handleNavClick('ticketing');
 
-                }} style={getComponentStyle('ticketing')} >Ticketing</li>
+                }} style={getComponentStyle('ticketing')} >Ticketing</li> */}
+
+                <li
+                    className={activeComponent === 'home' ? 'active' : 'notActive'} onClick={() => {
+                        handleNavClick('home');
+                    }}
+
+                    style={getComponentStyle('home')}
+                >
+                Home</li>
             </ul>
         </div>
     );
@@ -159,17 +174,21 @@ const styles = {
     container: {
         width: '100%',
         height: '200px',
-        color: 'purple'
+        backgroundColor: 'purple',
+        position: 'relative',
+
     },
+    
     nav: {
         display: 'flex',
         listStyle: 'none',
-
         justifyContent: 'end',
         alignItems: 'center',
         width: '100%',
         height: '100%',
-        backgroundColor: 'purple'
+        // backgroundColor: 'purple',
+        top: '0',
+
     },
 
 };
